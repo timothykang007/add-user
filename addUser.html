@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Add User</title>
+	<link rel="stylesheet" type="text/css" href="addUser.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('h2.top-headings').click(function(){
+				alert('clicked');
+				$('.input-box').parent().append('.h2.top-headings');
+				// $('input').append($('h2.top-headings'));
+			});
+		});
+		// $(document).on(function('click', 'h2.top-headings', function(){
+		// 	alert('you clicked me');
+		// )};
+
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="headings">
+			<h2 class="top-headings">First Name</h2>
+			<h2 class="top-headings">Last Name</h2>
+			<h2 class="top-headings">Email Address</h2>
+			<h2 class="top-headings">Contact #</h2>
+		</div>
+
+		<table style="width: 30%" id="my-table">
+			<h1 class="description">Add User</h1>
+			<hr class="description">
+
+			<tr id="row-one">
+				<td class="heading-names">First Name: </td>
+				<td>
+					<input class="input-box"></input>
+				</td>
+			</tr>
+
+			<tr id="row-two">
+				<td class="heading-names">Last Name: </td>
+				<td>
+					<input class="input-box"></input>
+				</td>
+			</tr>
+
+			<tr id="row-three">
+				<td class="heading-names">Email Address: </td>
+				<td>
+					<input class="input-box"></input>
+				</td>
+			</tr>
+
+			<tr id="row-four">
+				<td class="heading-names">Contact No: </td>
+				<td>
+					<input class="input-box"></input>
+				</td>
+			</tr>
+		
+		</table>
+
+		<button id="user-button">Add User</button>
+
+	</div>
+
+
+</body>
+</html>
