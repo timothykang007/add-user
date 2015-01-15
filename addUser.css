@@ -27,8 +27,8 @@ body {
 			background-position: left;
 		}
 
-			h2.top-headings {
-				display: inline-block;
+			td.top-headings {
+				display: inline-table;
 				/*background-color: green;*/
 				margin-left: 15px;
 				background-position: left;	

@@ -7,9 +7,21 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('h2.top-headings').click(function(){
-				alert('clicked');
-				$('.input-box').parent().append('.h2.top-headings');
+			$('#user-button').click(function(){
+
+				// $("td").append("<tr><td>"+$("input1").val()+"<td></td>"+$("input2").val()+"</td><td>"+$("input3").val()+"</td><td>"+$("input4").val()+"</td></tr>")
+				// alert('clicked');
+				$('tbody').append("<tr>"+
+									"<td>"+$('#input1').val()
+									+"</td>"
+									+"<td>"+$('#input2').val()
+									+"</td>"
+									+"<td>"+$('#input3').val()
+									+"</td>"
+									+"<td>"+$('#input4').val()
+									+"</td>"
+								+"</tr>");
+				
 				// $('input').append($('h2.top-headings'));
 			});
 		});
@@ -22,46 +34,32 @@
 
 <body>
 	<div id="wrapper">
-		<div id="headings">
-			<h2 class="top-headings">First Name</h2>
-			<h2 class="top-headings">Last Name</h2>
-			<h2 class="top-headings">Email Address</h2>
-			<h2 class="top-headings">Contact #</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email Address</th>
+					<th>Contact #</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>steven</td>
+					<td>johnson</td>
+					<td>s.johnson@steve.com</td>
+					<td>123-456-7890</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div id="input-box">
+			<p>First Name:<input type="text" name="first_name" id="input1"></p>
+			<p>Last Name:<input type="text" name="last_name" id="input2"></p>
+			<p>Email Address:<input type="text" name="email_address" id="input3"></p>
+			<p>Contact #:<input type="text" name="contact#" id="input4"></p>
 		</div>
 
-		<table style="width: 30%" id="my-table">
-			<h1 class="description">Add User</h1>
-			<hr class="description">
-
-			<tr id="row-one">
-				<td class="heading-names">First Name: </td>
-				<td>
-					<input class="input-box"></input>
-				</td>
-			</tr>
-
-			<tr id="row-two">
-				<td class="heading-names">Last Name: </td>
-				<td>
-					<input class="input-box"></input>
-				</td>
-			</tr>
-
-			<tr id="row-three">
-				<td class="heading-names">Email Address: </td>
-				<td>
-					<input class="input-box"></input>
-				</td>
-			</tr>
-
-			<tr id="row-four">
-				<td class="heading-names">Contact No: </td>
-				<td>
-					<input class="input-box"></input>
-				</td>
-			</tr>
-		
-		</table>
 
 		<button id="user-button">Add User</button>
 
@@ -70,3 +68,5 @@
 
 </body>
 </html>
+
+<!-- input type = txt -->
