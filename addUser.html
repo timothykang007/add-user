@@ -8,9 +8,6 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#user-button').click(function(){
-
-				// $("td").append("<tr><td>"+$("input1").val()+"<td></td>"+$("input2").val()+"</td><td>"+$("input3").val()+"</td><td>"+$("input4").val()+"</td></tr>")
-				// alert('clicked');
 				$('tbody').append("<tr>"+
 									"<td>"+$('#input1').val()
 									+"</td>"
@@ -20,15 +17,10 @@
 									+"</td>"
 									+"<td>"+$('#input4').val()
 									+"</td>"
-								+"</tr>");
+									+"</tr>");
 				
-				// $('input').append($('h2.top-headings'));
 			});
 		});
-		// $(document).on(function('click', 'h2.top-headings', function(){
-		// 	alert('you clicked me');
-		// )};
-
 	</script>
 </head>
 
@@ -43,6 +35,7 @@
 					<th>Contact #</th>
 				</tr>
 			</thead>
+
 			<tbody>
 				<tr>
 					<td>steven</td>
@@ -51,6 +44,7 @@
 					<td>123-456-7890</td>
 				</tr>
 			</tbody>
+
 		</table>
 
 		<div id="input-box">
@@ -60,11 +54,9 @@
 			<p>Contact #:<input type="text" name="contact#" id="input4"></p>
 		</div>
 
-
 		<button id="user-button">Add User</button>
 
 	</div>
-
 
 </body>
 </html>
